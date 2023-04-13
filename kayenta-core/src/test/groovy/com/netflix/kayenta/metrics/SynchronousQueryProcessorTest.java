@@ -25,7 +25,7 @@ import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.verifyZeroInteractions;
+import static org.mockito.Mockito.verifyNoInteractions;
 import static org.mockito.Mockito.when;
 import static org.springframework.http.HttpStatus.BAD_GATEWAY;
 import static org.springframework.http.HttpStatus.BAD_REQUEST;
@@ -112,7 +112,7 @@ public class SynchronousQueryProcessorTest {
             any(CanaryConfig.class),
             any(CanaryMetricConfig.class),
             any(CanaryScope.class));
-    verifyZeroInteractions(storageService);
+    verifyNoInteractions(storageService);
   }
 
   @Test
@@ -192,7 +192,7 @@ public class SynchronousQueryProcessorTest {
             any(CanaryConfig.class),
             any(CanaryMetricConfig.class),
             any(CanaryScope.class));
-    verifyZeroInteractions(storageService);
+    verifyNoInteractions(storageService);
   }
 
   @Test
@@ -220,7 +220,7 @@ public class SynchronousQueryProcessorTest {
             any(CanaryConfig.class),
             any(CanaryMetricConfig.class),
             any(CanaryScope.class));
-    verifyZeroInteractions(storageService);
+    verifyNoInteractions(storageService);
   }
 
   @Test
@@ -248,7 +248,7 @@ public class SynchronousQueryProcessorTest {
             any(CanaryConfig.class),
             any(CanaryMetricConfig.class),
             any(CanaryScope.class));
-    verifyZeroInteractions(storageService);
+    verifyNoInteractions(storageService);
   }
 
   private RetrofitError getRetrofitErrorWithHttpStatus(int status) {
