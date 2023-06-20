@@ -1,5 +1,5 @@
 Kayenta
-====
+==== 
 [![Build Status](https://travis-ci.org/spinnaker/kayenta.svg?branch=master)](https://travis-ci.org/spinnaker/kayenta)
 
 Kayenta is a platform for Automated Canary Analysis (ACA). It is used by Spinnaker to enable automated canary deployments. Please see the comprehensive [canary documentation](https://www.spinnaker.io/guides/user/canary/stage/) for more details.
